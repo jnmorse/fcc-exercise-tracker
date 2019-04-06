@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 
 mongoose.Promise = require('bluebird')
 
-mongoose.connect(`mongodb://mongo:27017}`).then(
+mongoose.connect(`mongodb://mongo:27017`).then(
   () => {
     console.log('connected to database')
   }
