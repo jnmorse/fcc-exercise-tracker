@@ -26,8 +26,8 @@
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
     "express": "^4.14.0",
-    "mongodb": "^2.2.14",
-    "mongoose": "^4.7.2",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.4.22",
     "shortid": "^2.2.6"
   },
   "devDependencies": {
