@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - db-data:/data/db
+
+  node:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./
+    command: ['npm', 'run', 'dev']
+    restart: on-failure
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+
+volumes:
+  db-data:

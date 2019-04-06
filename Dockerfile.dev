@@ -1,0 +1,17 @@
+# From Node Alpine 10.15.3 image
+FROM node:10.15.3-alpine
+
+# Set Working Director to /app
+WORKDIR /app
+
+# Copy over package.json
+COPY ./package.json .
+
+# Install Packages
+RUN npm install
+
+# Copy Rest of files
+COPY ./ ./
+
+# Start Server
+CMD npm start

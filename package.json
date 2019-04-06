@@ -1,0 +1,39 @@
+{
+  "name": "fcc-exercise-tracker",
+  "version": "0.1.0",
+  "description": "A REST API project, part of Free Code Camp's curriculum",
+  "keywords": [
+    "express",
+    "gomix",
+    "node"
+  ],
+  "homepage": "https://github.com/jnmorse/fcc-exercise-tracker#readme",
+  "bugs": {
+    "url": "https://github.com/jnmorse/fcc-exercise-tracker/issues"
+  },
+  "repository": {
+    "url": "git+https://github.com/jnmorse/fcc-exercise-tracker.git"
+  },
+  "license": "MIT",
+  "author": "Joseph Morse <tamed.lionheart@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.14",
+    "mongoose": "^4.7.2",
+    "shortid": "^2.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "engines": {
+    "node": "6.9.1"
+  }
+}
